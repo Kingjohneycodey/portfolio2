@@ -14,3 +14,22 @@
         padding: 100px;
     }
 }
+
+.service-display-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default single column layout for mobile */
+    gap: 20px; /* Adjust spacing between items */
+}
+
+/* Responsive design for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .service-display-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .service-display-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+    }
+}
