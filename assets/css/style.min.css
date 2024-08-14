@@ -4313,26 +4313,8 @@ p:last-child {
   font-size: 18px;
   font-weight: 300;
 }
-@media (min-width: 576px) {
-  .footer-single-info .info-box .text {
-    font-size: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .footer-single-info .info-box .text {
-    font-size: 22px;
-  }
-}
-@media (min-width: 992px) {
-  .footer-single-info .info-box .text {
-    font-size: 26px;
-  }
-}
-@media (min-width: 1200px) {
-  .footer-single-info .info-box .text {
-    font-size: 32px;
-  }
-}
+
+
 .footer-single-info .info-box:hover .icon {
   background: #fff;
   border-color: #fff;
