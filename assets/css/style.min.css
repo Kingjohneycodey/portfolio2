@@ -999,9 +999,10 @@ p:last-child {
 }
 .hero-wrapper {
   position: relative;
-  height: 940px;
+  height: 100%;
   overflow: hidden;
   z-index: 1;
+  padding-bottom: 50px;
 }
 @media (min-width: 576px) {
   .hero-wrapper {
@@ -1228,13 +1229,20 @@ p:last-child {
 
 .hero-text{
 text-align: center;
-margin-top: 200px;
+margin-top: 150px;
+padding: 20px;
+}
+
+
+#contact{
+  padding: 20px;
 }
 
 @media (min-width: 700px) {
   .hero-text{
     text-align: left;
     margin-top: 0px;
+    padding: 0px;
     }
 
     .hero-portrait .image {
