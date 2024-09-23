@@ -1018,16 +1018,6 @@ p:last-child {
     height: 750px;
   }
 }
-@media (min-width: 1200px) {
-  .hero-wrapper {
-    height: 910px;
-  }
-}
-@media (min-width: 1800px) {
-  .hero-wrapper {
-    height: 1130px;
-  }
-}
 /* .hero-content {
   position: absolute;
   bottom: 60px;
@@ -1211,62 +1201,18 @@ p:last-child {
   width: 700px;
   height: 700px;
 }
-/* .hero-portrait {
-  position: absolute;
-  left: calc(50% - 22px);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 130px;
-  width: 240px;
-  z-index: -1;
-}
-@media (min-width: 576px) {
-  .hero-portrait {
-    left: calc(50% - 36px);
-    width: 400px;
-    top: 150px;
-  }
-}
-@media (min-width: 992px) {
-  .hero-portrait {
-    right: 0;
-    width: 400px;
-    bottom: 0;
-    top: auto;
-    left: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-portrait {
-    right: -155px;
-    width: auto;
-  }
-}
-@media (min-width: 1800px) {
-  .hero-portrait {
-    right: 0;
-  }
-} */
 .hero-portrait .image {
   height: auto;
   position: relative;
   z-index: 8;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
-@media (min-width: 992px) {
-  .hero-portrait .image {
-    height: 570px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-portrait .image {
-    height: 700px;
-  }
-}
-@media (min-width: 1800px) {
-  .hero-portrait .image {
-    height: 950px;
-  }
-}
+
 .hero-portrait .image-half-round-shape {
   bottom: 10%;
   left: 50%;
@@ -1279,6 +1225,25 @@ p:last-child {
   border-left: 0;
   z-index: -1;
 }
+
+.hero-text{
+text-align: center;
+margin-top: 200px;
+}
+
+@media (min-width: 700px) {
+  .hero-text{
+    text-align: left;
+    margin-top: 0px;
+    }
+
+    .hero-portrait .image {
+      margin-top: 0;
+    }
+    
+}
+
+
 @media (min-width: 576px) {
   .hero-portrait .image-half-round-shape {
     width: 260px;
@@ -1723,12 +1688,12 @@ p:last-child {
 }
 .skill-progress-single-item {
   background: #2a2c39;
-  padding: 25px 25px 30px 25px;
+  padding: 10px;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .skill-progress-single-item {
-    padding: 45px 45px 50px 45px;
+    padding: 20px;
   }
 }
 .skill-progress-single-item:last-child {
@@ -2033,16 +1998,12 @@ p:last-child {
   }
 }
 .testimonial-slider-single-item .text {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   color: #fff;
 }
-@media (min-width: 768px) {
-  .testimonial-slider-single-item .text {
-    font-size: 32px;
-  }
-}
+
 .testimonial-slider-single-item .info {
   display: -webkit-box;
   display: -ms-flexbox;

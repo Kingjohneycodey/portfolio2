@@ -147,6 +147,7 @@
     var testimonial_display_slider = new Swiper('.testimonial-display-slider .swiper-container', {
         slidesPerView: 2,
         loop: true,
+        slidesPerGroup: 2,
         // Navigation arrows
         navigation: {
             nextEl: '.testimonial-display-box .button-next',
@@ -157,6 +158,7 @@
 
             0: {
                 slidesPerView: 1,
+                slidesPerGroup: 1,
             },
             992: {
                 spaceBetween: 80,
@@ -181,6 +183,7 @@
     var company_logo_display_slider = new Swiper('.company-logo-display-slider .swiper-container', {
         slidesPerView: 4,
         loop: true,
+      
 
         breakpoints: {
 

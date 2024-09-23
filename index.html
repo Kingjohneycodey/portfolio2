@@ -44,6 +44,27 @@
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <style>
+.curly-frame {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: url('./profile.jpg') center center/cover;
+
+  box-shadow: 0 0 15px rgba(14, 36, 143, 0.4); /* Add a shadow for a 3D effect */
+}
+
+@media (min-width: 1000px) {
+  .curly-frame {
+  width: 400px;
+  height: 400px;
+
+}
+
+}
+
+    </style>
   </head>
 
   <body>
@@ -56,7 +77,7 @@
               <div class="col">
                 <!-- Start Header Logo -->
                 <a href="index.html" class="header-logo">
-                  <h1>JOHNEY.DEV</h1>
+                  <h2>JOHNEY.DEV</h2>
                 </a>
                 <!-- End Header Logo -->
               </div>
@@ -70,18 +91,15 @@
                   <li class="has-dropdown">
                     <a href="#projects">Projects</a>
                   </li>
-                  <li class="has-dropdown">
-                    <a href="blog-list.html">Blog</a>
-                  </li>
                  
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
                 <!-- End Header Menu -->
               </div>
               <div class="col">
                 <div class="header-btn-link text-end">
                   <a
-                    href="contact.html"
+                    href="#contact"
                     class="btn btn-sm btn-outline-one icon-space-left"
                     >Hire Me <i class="icofont-double-right"></i
                   ></a>
@@ -99,9 +117,9 @@
           <div class="row align-items-center justify-content-between">
             <div class="col">
               <div class="mobile-logo">
-                <a href="index.html"
-                  ><img src="assets/images/logo/logo.png" alt=""
-                /></a>
+                <a href="index.html">
+                  <h2>JOHNEY.DEV</h2>
+                  </a>
               </div>
             </div>
             <div class="col">
@@ -144,13 +162,10 @@
                   <a href="#services"><span>Services</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Blog</span></a>
+                  <a href="#projects"><span>Projects</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Projects</span></a>
-                </li>
-                <li>
-                  <a href="contact.html"><span>Contact</span></a>
+                  <a href="#contact"><span>Contact</span></a>
                 </li>
               </ul>
             </div>
@@ -162,18 +177,28 @@
           <div class="mobile-contact-info text-center">
             <ul class="social-link">
               <li>
-                <a target="_blank" href="https://example.com/"
+                <a href="https://www.facebook.com/profile.php?id=100089407077566" target="_blank"
                   ><i class="icofont-facebook"></i
                 ></a>
               </li>
               <li>
-                <a target="_blank" href="https://example.com/"
+                <a href="https://wa.me/+2349127056239" target="_blank"
+                  ><i class="icofont-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/ahiakwojohn" target="_blank"
+                  ><i class="icofont-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://x.com/kingjohneycodey" target="_blank"
                   ><i class="icofont-twitter"></i
                 ></a>
               </li>
               <li>
-                <a target="_blank" href="https://example.com/"
-                  ><i class="icofont-skype"></i
+                <a href="https://github.com/kingjohneycodey" target="_blank"
+                  ><i class="icofont-github"></i
                 ></a>
               </li>
             </ul>
@@ -190,30 +215,17 @@
       <!-- ...::: Start Hero Section :::... -->
       <div class="hero-section section-dark-blue-bg">
         <div class="hero-wrapper hero-wrapper1">
-          <div>
+          <div class="hero-text">
             <div class="hero-content">
               <h3 class="title-big">Hello! I’m</h3>
               <h2 class="title-large">
                 Ahiakwo <span class="shape-mark">John</span>
               </h2>
-              <p>Software Engineer and Fullstack Web and Mobile Developer.</p>
+              <p>Software Engineer, Fullstack Web, Mobile and Web3 Developer.</p>
 
-              <a href="#" class="btn btn-xl btn-outline-one icon-space-left"
+              <a href="./AhiakwoJohnResume.pdf" class="btn btn-xl btn-outline-one icon-space-left"
                 >Get Resume <i class="icofont-download"></i
               ></a>
-
-              <!-- <div class="video-link">
-                <a
-                  class="wave-btn"
-                  href="https://youtu.be/MKjhBO2xQzg"
-                  data-autoplay="true"
-                  data-vbtype="video"
-                >
-                  <div class="ripple"><i class="icofont-ui-play"></i></div>
-                </a>
-
-                <span class="video-text"> Watch Video</span>
-              </div> -->
             </div>
           </div>
 
@@ -230,12 +242,14 @@
 
           <div class="hero-portrait">
             <div class="image">
-              <img
+              <div class="curly-frame">
+              <!-- <img
                 class="img-fluid"
                 src="assets/images/portrait/portrait-hero.png"
                 alt=""
                 width="600px"
-              />
+              /> -->
+            </div>
 
               <!-- <div class="image-half-round-shape"></div>
                         <div class="social-link">
@@ -275,25 +289,7 @@
                   <!-- Slider main container -->
 
                   <!-- Slides -->
-                  <!-- Start Service Box Single Item -->
-                  <div class="service-box-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <div class="icon">
-                      <img src="assets/images/icon/service-icon-1.png" alt="" />
-                    </div>
-                    <h4 class="title">
-                      <a href="service-details.html">UI/UX Design</a>
-                    </h4>
-                    <ul class="list-item">
-                      <li>Landing Pages</li>
-                      <li>User Flow</li>
-                      <li>Wireframing</li>
-                      <li>Prototyping</li>
-                      <li>Mobile App Design</li>
-                    </ul>
-                    <div class="inner-shape inner-shape-bottom-right"></div>
-                  </div>
-                  <!-- End Service Box Single Item -->
+    
                   <!-- Start Service Box Single Item -->
                   <div class="service-box-single-item">
                     <div class="inner-shape inner-shape-top-right"></div>
@@ -304,12 +300,13 @@
                       <a href="service-details.html">Website Development</a>
                     </h4>
                     <ul class="list-item">
-                      <li>HTML/CSS</li>
-                      <li>JavaScript</li>
-                      <li>React</li>
-                      <li>Nextjs</li>
-                      <li>Typescript</li>
-                      <li>WordPress</li>
+                      <li>Landing Page</li>
+                      <li>Company Website</li>
+                      <li>Management Systems</li>
+                      <li>Ecommerce Website</li>
+                      <li>WordPress Websites</li>
+                      <li>Web3 Development</li>
+                      <li>HTML, CSS, JavaScript, React, NextJs, TypeScript, Tailwind</li>
                     </ul>
                     <div class="inner-shape inner-shape-bottom-right"></div>
                   </div>
@@ -324,7 +321,7 @@
                       <a href="service-details.html">Backend Development</a>
                     </h4>
                     <ul class="list-item">
-                      <li>Nodejs</li>
+                      <li>Nodejs/NestJs</li>
                       <li>PHP - Laravel</li>
                       <li>Python</li>
                       <li>Database Design & Optimization</li>
@@ -353,44 +350,6 @@
                   </div>
                   <!-- End Service Box Single Item -->
 
-                  <!-- Start Service Box Single Item -->
-                  <div class="service-box-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <div class="icon">
-                      <img src="assets/images/icon/service-icon-3.png" alt="" />
-                    </div>
-                    <h4 class="title">
-                      <a href="service-details.html">Web App Development</a>
-                    </h4>
-                    <ul class="list-item">
-                      <li>Content Management Systems</li>
-                      <li>Enterprise Management Systems</li>
-                      <li>Online Portal</li>
-                      <li>Progressive Web Applications (PWAs)</li>
-                    </ul>
-                    <div class="inner-shape inner-shape-bottom-right"></div>
-                  </div>
-                  <!-- End Service Box Single Item -->
-
-                  <!-- Start Service Box Single Item -->
-                  <div class="service-box-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <div class="icon">
-                      <img src="assets/images/icon/service-icon-3.png" alt="" />
-                    </div>
-                    <h4 class="title">
-                      <a href="service-details.html">Teaching And Consultation</a>
-                    </h4>
-                    <ul class="list-item">
-                      <li>Web design Course</li>
-                      <li>Backend Course</li>
-                      <li>Web Hosting Guide</li>
-                      <li>Mobile App Development Course</li>
-                      <li>Fullstack Development Course</li>
-                    </ul>
-                    <div class="inner-shape inner-shape-bottom-right"></div>
-                  </div>
-                  <!-- End Service Box Single Item -->
                 </div>
               </div>
             </div>
@@ -417,7 +376,7 @@
                   <span class="section-tag">Special Skills</span>
                   <h2 class="section-title">My Special Skill Field Here.</h2>
 
-                  <a href="#" class="btn btn-xl btn-outline-one icon-space-left"
+                  <a href="./AhiakwoJohnResume.pdf" target="_blank" class="btn btn-xl btn-outline-one icon-space-left"
                     >Get Resume <i class="icofont-download"></i
                   ></a>
                 </div>
@@ -491,7 +450,7 @@
                     <img src="assets/images/icon/counterup-icon-1.png" alt="" />
                   </div>
                   <div class="content">
-                    <h2 class="number"><span class="counter">50</span>+</h2>
+                    <h2 class="number"><span class="counter">30</span>+</h2>
                     <span class="text">Happy Clients</span>
                   </div>
                 </div>
@@ -506,7 +465,7 @@
                     <img src="assets/images/icon/counterup-icon-2.png" alt="" />
                   </div>
                   <div class="content">
-                    <h2 class="number"><span class="counter">100</span>+</h2>
+                    <h2 class="number"><span class="counter">50</span>+</h2>
                     <span class="text">Project Complete</span>
                   </div>
                 </div>
@@ -534,7 +493,7 @@
       <!-- ...::: End Counter Display Section :::... -->
 
       <!-- ...::: Start Project Display Section :::... -->
-      <div class="project-display-section section-gap-tb-165">
+      <div class="project-display-section section-gap-tb-165" id="projects">
         <div class="project-display-box">
           <div class="container">
             <div class="row">
@@ -766,14 +725,12 @@
                           <div class="content">
                             <span class="icon">“</span>
                             <p class="text">
-                              Lorem Ipsum simpy dummy text of the printing and
-                              types industry has been the industr standard
-                              dummy.
+                              Ahiakwo John is a remarkable full-stack developer. His ability to seamlessly integrate front-end and back-end technologies resulted in a sleek and functional application that exceeded our expectations. His attention to detail and problem-solving mindset made the entire development process smooth and efficient.
                             </p>
                             <div class="info">
                               <div class="author">
-                                <h4 class="name">Raleigh Friend</h4>
-                                <span class="designation">CEO, Seoly</span>
+                                <h4 class="name">Mr Melvin EdoJa</h4>
+                                <span class="designation">CTO, Silicon Delta</span>
                               </div>
                               <ul class="review">
                                 <li class="fill">
@@ -788,7 +745,44 @@
                                 <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
-                                <li class="blank">
+                                <li class="fill">
+                                  <i class="icofont-star"></i>
+                                </li>
+                            
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End testimonial Slider Single Item -->
+                        <!-- Start testimonial Slider Single Item -->
+                        <div
+                          class="testimonial-slider-single-item swiper-slide"
+                        >
+                          <div class="inner-shape inner-shape-top-right"></div>
+                          <div class="content">
+                            <span class="icon">“</span>
+                            <p class="text">
+                              Working with Ahiakwo John has been a game-changer for our company. He transformed our outdated systems into a cutting-edge web application that drastically improved our workflow. His mastery of JavaScript frameworks, combined with his deep understanding of backend development, makes him an invaluable asset.
+                            </p>
+                            <div class="info">
+                              <div class="author">
+                                <h4 class="name">Paschal Soribe</h4>
+                                <span class="designation">CEO, Skillz Systems</span>
+                              </div>
+                              <ul class="review">
+                                <li class="fill">
+                                  <i class="icofont-star"></i>
+                                </li>
+                                <li class="fill">
+                                  <i class="icofont-star"></i>
+                                </li>
+                                <li class="fill">
+                                  <i class="icofont-star"></i>
+                                </li>
+                                <li class="fill">
+                                  <i class="icofont-star"></i>
+                                </li>
+                                <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
                               </ul>
@@ -804,14 +798,12 @@
                           <div class="content">
                             <span class="icon">“</span>
                             <p class="text">
-                              Lorem Ipsum simpy dummy text of the printing and
-                              types industry has been the industr standard
-                              dummy.
+                              Ahiakwo John's full-stack expertise is unmatched. From implementing complex APIs to building intuitive user interfaces, he handled every aspect of our project with precision. His dedication to writing clean, scalable code is evident in the performance and reliability of our app.
                             </p>
                             <div class="info">
                               <div class="author">
-                                <h4 class="name">Raleigh Friend</h4>
-                                <span class="designation">CEO, Seoly</span>
+                                <h4 class="name">Gracious Emmanuel</h4>
+                                <span class="designation">CEO, Rewod Technologies</span>
                               </div>
                               <ul class="review">
                                 <li class="fill">
@@ -826,7 +818,7 @@
                                 <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
-                                <li class="blank">
+                                <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
                               </ul>
@@ -834,6 +826,7 @@
                           </div>
                         </div>
                         <!-- End testimonial Slider Single Item -->
+
                         <!-- Start testimonial Slider Single Item -->
                         <div
                           class="testimonial-slider-single-item swiper-slide"
@@ -842,14 +835,12 @@
                           <div class="content">
                             <span class="icon">“</span>
                             <p class="text">
-                              Lorem Ipsum simpy dummy text of the printing and
-                              types industry has been the industr standard
-                              dummy.
+                              Ahiakwo John was instrumental in bringing our vision to life. He built a dynamic web platform that not only met our business needs but also allowed us to scale with ease. His proficiency across multiple technologies, from React to Node.js, was key to our success.
                             </p>
                             <div class="info">
                               <div class="author">
-                                <h4 class="name">Raleigh Friend</h4>
-                                <span class="designation">CEO, Seoly</span>
+                                <h4 class="name">Pedro Neto</h4>
+                                <span class="designation">CEO, Tidier AUM</span>
                               </div>
                               <ul class="review">
                                 <li class="fill">
@@ -864,7 +855,7 @@
                                 <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
-                                <li class="blank">
+                                <li class="fill">
                                   <i class="icofont-star"></i>
                                 </li>
                               </ul>
@@ -892,246 +883,63 @@
       </div>
       <!-- ...::: End Testimonial Display Section :::... -->
 
-      <!-- ...::: Start Company Logo Display Section :::... -->
-      <div class="company-logo-display section-mt-165">
-        <div class="company-logo-display-box">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <!-- Start Section Content -->
-                <div class="section-content pos-relative">
-                  <span class="section-tag">Favourite Clients</span>
-                  <h2 class="section-title">Work With Trusted Comapny.</h2>
-                </div>
-                <!-- End Section Content -->
-              </div>
-            </div>
 
-            <div class="company-logo-display-wrapper">
-              <div class="row">
-                <div class="col">
-                  <div class="company-logo-display-slider">
-                    <!-- Slider main container -->
-                    <div class="swiper-container">
-                      <!-- Additional required wrapper -->
-                      <div class="swiper-wrapper">
-                        <!-- Start Company Logo Slider Single Item -->
-                        <div class="company-logo-single-item swiper-slide">
-                          <a href="#" class="image">
-                            <img
-                              src="assets/images/company-logo/company-logo-1.png"
-                              alt=""
-                            />
-                            <img
-                              src="assets/images/company-logo/1.png"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <!-- End Company Logo Slider Single Item -->
-                        <!-- Start Company Logo Slider Single Item -->
-                        <div class="company-logo-single-item swiper-slide">
-                          <a href="#" class="image">
-                            <img
-                              src="assets/images/company-logo/company-logo-2.png"
-                              alt=""
-                            />
-                            <img
-                              src="assets/images/company-logo/2.png"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <!-- End Company Logo Slider Single Item -->
-                        <!-- Start Company Logo Slider Single Item -->
-                        <div class="company-logo-single-item swiper-slide">
-                          <a href="#" class="image">
-                            <img
-                              src="assets/images/company-logo/company-logo-3.png"
-                              alt=""
-                            />
-                            <img
-                              src="assets/images/company-logo/3.png"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <!-- End Company Logo Slider Single Item -->
-                        <!-- Start Company Logo Slider Single Item -->
-                        <div class="company-logo-single-item swiper-slide">
-                          <a href="#" class="image">
-                            <img
-                              src="assets/images/company-logo/company-logo-4.png"
-                              alt=""
-                            />
-                            <img
-                              src="assets/images/company-logo/4.png"
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <!-- End Company Logo Slider Single Item -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="col-lg-7 offset-lg-1" id="contact">
+        <div class="contact-form-wrapper section-mt-165">
+            <!-- Start Section Content -->
+            <div class="content">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="title">If you have any project or need help. Contact me</h2>
             </div>
-          </div>
+            <!-- End Section Content -->
+
+            <!-- Start Contact Form Box -->
+            <div class="contact-form-box">
+                <form id="contact-form" class="default-form contact-form" action="p" method="post">
+                    <div class="row mb-n6">
+                        <div class="col-xl-6 mb-6">
+                            <div class="default-form-group">
+                                <input name="name" type="text" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-6">
+                            <div class="default-form-group">
+                                <input name="email" type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-6">
+                            <div class="default-form-group">
+                                <input name="phone" type="tel" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-6">
+                            <div class="default-form-group">
+                                <input name="subject" type="text" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mb-6">
+                            <div class="default-form-group">
+                                <textarea name="message" placeholder="Comment" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-6">
+                            <div class="default-form-group tex-center">
+                                <button type="submit" class="btn btn-lg btn-outline-one">Submit Message</button>
+                            </div>
+                        </div>
+                        <p class="form-messege"></p>
+                    </div>
+                </form>
+            </div>
+            <!-- End Contact Form Box -->
         </div>
-      </div>
-      <!-- ...::: End Company Logo Display Section :::... -->
-
-      <!-- ...::: Start Blog Feed Display Section :::... -->
-      <div class="blog-feed-display-section section-gap-tb-165">
-        <div class="blog-feed-display-box">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <!-- Start Section Content -->
-                <div class="section-content pos-relative text-center">
-                  <span class="section-tag">Blog Post</span>
-                  <h2 class="section-title">Latest Tips & Tricks</h2>
-                </div>
-                <!-- End Section Content -->
-              </div>
-            </div>
-
-            <div class="blog-feed-display-wrapper">
-              <div class="row mb-n5">
-                <div class="col-12 mb-5">
-                  <!-- Start Blog Feed Single Item -->
-                  <div class="blog-feed-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <a href="blog-details-sidebar-left.html" class="image">
-                      <img
-                        src="assets/images/blog/blog-feed-img-1.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-box">
-                      <div class="content">
-                        <div class="post-meta">
-                          <a href="#" class="catagory">Business</a>
-                          <a href="#" class="date">07 February, 2021</a>
-                        </div>
-                        <h4 class="title">
-                          <a href="blog-details-sidebar-left.html"
-                            >Don't wait until you officially started business to
-                            line these up.</a
-                          >
-                        </h4>
-                      </div>
-                      <a
-                        href="blog-details-sidebar-left.html"
-                        class="btn btn-md btn-outline-one icon-space-left"
-                        >Read More<i class="icofont-double-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <!-- End Blog Feed Single Item -->
-                </div>
-                <div class="col-12 mb-5">
-                  <!-- Start Blog Feed Single Item -->
-                  <div class="blog-feed-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <a href="blog-details-sidebar-left.html" class="image">
-                      <img
-                        src="assets/images/blog/blog-feed-img-2.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-box">
-                      <div class="content">
-                        <div class="post-meta">
-                          <a href="#" class="catagory">Business</a>
-                          <a href="#" class="date">07 February, 2021</a>
-                        </div>
-                        <h4 class="title">
-                          <a href="blog-details-sidebar-left.html"
-                            >Don't wait until you officially started business to
-                            line these up.</a
-                          >
-                        </h4>
-                      </div>
-                      <a
-                        href="blog-details-sidebar-left.html"
-                        class="btn btn-md btn-outline-one icon-space-left"
-                        >Read More<i class="icofont-double-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <!-- End Blog Feed Single Item -->
-                </div>
-                <div class="col-12 mb-5">
-                  <!-- Start Blog Feed Single Item -->
-                  <div class="blog-feed-single-item">
-                    <div class="inner-shape inner-shape-top-right"></div>
-                    <a href="blog-details-sidebar-left.html" class="image">
-                      <img
-                        src="assets/images/blog/blog-feed-img-3.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-box">
-                      <div class="content">
-                        <div class="post-meta">
-                          <a href="#" class="catagory">Business</a>
-                          <a href="#" class="date">07 February, 2021</a>
-                        </div>
-                        <h4 class="title">
-                          <a href="blog-details-sidebar-left.html"
-                            >Don't wait until you officially started business to
-                            line these up.</a
-                          >
-                        </h4>
-                      </div>
-                      <a
-                        href="blog-details-sidebar-left.html"
-                        class="btn btn-md btn-outline-one icon-space-left"
-                        >Read More<i class="icofont-double-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <!-- End Blog Feed Single Item -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ...::: End Blog Feed Display Section :::... -->
+    </div><br><br>
 
       <!-- ...::: Start Footer Section :::... -->
       <footer class="footer-section section-bg overflow-hidden pos-relative">
         <div class="footer-inner-shape-top-left"></div>
         <div class="footer-inner-shape-top-right"></div>
-        <div class="footer-section-top section-gap-t-165">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <!-- Start Section Content -->
-                <div class="section-content pos-relative text-center">
-                  <span class="section-tag">Get Latest Updates</span>
-                  <h2 class="section-title">Subscribe For Newsletter</h2>
-                </div>
-                <!-- End Section Content -->
-              </div>
-            </div>
-            <div class="footer-top-wrapper text-center">
-              <div class="row">
-                <div class="col-12">
-                  <form action="#" class="footer-newsletter">
-                    <input type="email" placeholder="demo@example.com" />
-                    <button class="submit-btn" type="submit">
-                      Subscribe Now
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="footer-center section-gap-tb-165">
           <div class="container">
             <div class="row justify-content-between align-items-center mb-n5">
@@ -1177,17 +985,12 @@
                       ></a>
                     </li>
                     <li>
-                      <a href="https://linkedin.com/in/ahiakwojohn" target="_blank"
-                        ><i class="icofont-instagram"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://linkedin.com/in/ahiakwojohn" target="_blank"
+                      <a href="https://x.com/kingjohneycodey" target="_blank"
                         ><i class="icofont-twitter"></i
                       ></a>
                     </li>
                     <li>
-                      <a href="https://linkedin.com/in/ahiakwojohn" target="_blank"
+                      <a href="https://github.com/kingjohneycodey" target="_blank"
                         ><i class="icofont-github"></i
                       ></a>
                     </li>
@@ -1228,7 +1031,7 @@
       <!-- ...::: End Footer Section :::... -->
 
       <!-- material-scrolltop button -->
-      <button class="material-scrolltop" type="button"></button>
+      <button class="material-scrolltop" type="button" style="color: white;">&uarr;</button>
     </main>
 
     <!-- Global Vendor, plugins JS -->
