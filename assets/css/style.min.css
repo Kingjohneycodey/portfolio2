@@ -710,6 +710,17 @@ p:last-child {
     max-width: 1170px;
   }
 }
+
+@media (min-width: 1201px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 90%;
+  }
+}
+
 .icon-space-left i {
   padding-left: 10px;
 }
